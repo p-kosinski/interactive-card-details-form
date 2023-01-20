@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Typography */
+
+@layer base {
+  .text-body-s {
+    @apply font-main font-medium text-s leading-1;
+  }
+  
+  .text-body-m {
+    @apply font-main font-medium text-s leading-1 tracking-wide uppercase;
+  }
+  
+  .text-body-l {
+    @apply font-main font-medium text-m leading-2 tracking-wide uppercase;
+  }
+
+  .text-heading-l {
+    @apply font-main font-medium text-l leading-3;
+  }
+
+  .text-heading-xl {
+    @apply font-main font-medium text-xl leading-4 tracking-wider;
+  }
+}
+
