@@ -2,27 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Typography */
-
 @layer base {
+  .default-text {
+    @apply font-main font-medium;
+  }
+
   .text-body-s {
-    @apply font-main font-medium text-s leading-1;
+    @apply default-text;
+    @apply text-s leading-2;
   }
   
   .text-body-m {
-    @apply font-main font-medium text-s leading-1 tracking-wide uppercase;
+    @apply default-text;
+    @apply text-s leading-2 tracking-s uppercase;
   }
   
   .text-body-l {
-    @apply font-main font-medium text-m leading-2 tracking-wide uppercase;
+    @apply default-text;
+    @apply text-m leading-3 tracking-s uppercase;
   }
 
   .text-heading-l {
-    @apply font-main font-medium text-l leading-3;
+    @apply default-text;
+    @apply text-l leading-4;
   }
 
   .text-heading-xl {
-    @apply font-main font-medium text-xl leading-4 tracking-wider;
+    @apply default-text;
+    @apply text-xl leading-5 tracking-l;
   }
 }
 
+@layer components {
+  .card-text-big {
+    @apply default-text;
+    @apply text-l leading-4 tracking-m;
+  }
+
+  .card-text-small {
+    @apply default-text;
+    @apply text-xs leading-1 tracking-xs;
+  }
+
+  @media screen(md) {
+    .card-number {
+      @apply text-heading-xl;
+    }
+
+    .card-text-small {
+      @apply text-body-l;
+    }
+  }
+}

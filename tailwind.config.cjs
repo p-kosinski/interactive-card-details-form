@@ -27,20 +27,24 @@ module.exports = {
       medium: 500,
     },
     fontSize: {
+      xs: '9px',
       s: '12px',
       m: '14px',
       l: '18px',
       xl: '28px'
     },
     lineHeight: {
-      1: '15px',
-      2: '18px',
-      3: '23px',
-      4: '36px'
+      1: '11px',
+      2: '15px',
+      3: '18px',
+      4: '23px',
+      5: '36px'
     },
     letterSpacing: {
-      wide: '2px',
-      wider: '3.42222px'
+      xs: '1.28571px',
+      s: '2px',
+      m: '2.2px',
+      l: '3.42222px'
     }
   },
   plugins: [],
